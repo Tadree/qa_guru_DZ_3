@@ -51,15 +51,15 @@ public class StudentRegistrationFormTest {
         $("#submit").click();
 
         $("#example-modal-sizes-title-lg").shouldHave(text("Thanks for submitting the form"));
-        $(".table > tbody > tr:nth-child(1) > td:nth-child(2)").shouldHave(text(firstName + ' ' + lastName));
-        $(".table > tbody > tr:nth-child(2) > td:nth-child(2)").shouldHave(text(email));
-        $(".table > tbody > tr:nth-child(3) > td:nth-child(2)").shouldHave(text(gender));
-        $(".table > tbody > tr:nth-child(4) > td:nth-child(2)").shouldHave(text(mobile));
-        $(".table > tbody > tr:nth-child(5) > td:nth-child(2)").shouldHave(text("19 January,1997"));
-        $(".table > tbody > tr:nth-child(6) > td:nth-child(2)").shouldHave(text(subjects));
-        $(".table > tbody > tr:nth-child(7) > td:nth-child(2)").shouldHave(text(hobbies));
-        $(".table > tbody > tr:nth-child(8) > td:nth-child(2)").shouldHave(text("test.jpeg"));
-        $(".table > tbody > tr:nth-child(9) > td:nth-child(2)").shouldHave(text(currentAddress));
-        $(".table > tbody > tr:nth-child(10) > td:nth-child(2)").shouldHave(text(state + ' ' + city));
+        $("tr:nth-child(1) > td:nth-child(2)").shouldHave(text(firstName + ' ' + lastName));
+        $("tr:nth-child(2) > td:nth-child(2)").shouldHave(text(email));
+        $("tr:nth-child(3) > td:nth-child(2)").shouldHave(text(gender));
+        $("tr:nth-child(4) > td:nth-child(2)").shouldHave(text(mobile));
+        $("tr:nth-child(5) > td:nth-child(2)").shouldHave(text("19 January,1997"));
+        $("tr:nth-child(6) > td:nth-child(2)").shouldHave(text(subjects));
+        $("tr:nth-child(7) > td:nth-child(2)").shouldHave(text(hobbies));
+        $("tr:nth-child(8) > td:nth-child(2)").shouldHave(text("test.jpeg"));
+        $("tr:nth-child(9) > td:nth-child(2)").shouldHave(text(currentAddress));
+        $("tr:nth-child(10) > td:nth-child(2)").shouldHave(text(state + ' ' + city));
     }
 }
