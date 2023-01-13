@@ -46,8 +46,10 @@ public class StudentRegistrationFormTest {
         $("#hobbiesWrapper").$(byText(hobbies)).click();
         $("#uploadPicture").uploadFile(new File("src/test/resources/test.jpeg"));
         $("#currentAddress").setValue(currentAddress);
-        $("#react-select-3-input").setValue(state).pressEnter();
-        $("#react-select-4-input").setValue(city).pressEnter();
+        $("#state").click();
+        $("#stateCity-wrapper").$(byText(state)).click();
+        $("#city").click();
+        $("#stateCity-wrapper").$(byText(city)).click();
         $("#submit").click();
 
         $("#example-modal-sizes-title-lg").shouldHave(text("Thanks for submitting the form"));
